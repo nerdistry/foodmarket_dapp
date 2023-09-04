@@ -7,6 +7,8 @@ pragma solidity >=0.7.0 <0.9.0; // 'pragma' - to specify the solidity version we
 
 contract foodmarket {
 
+    // These are the requirements.
+
     struct product{
         address payable owner;
         string name;
@@ -16,6 +18,8 @@ contract foodmarket {
         uint price;
         uint sold;
     }
+
+
 
 
 mapping (uint => product) internal products; 
